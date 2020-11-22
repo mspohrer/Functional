@@ -1,0 +1,19 @@
+Test suite spec: RUNNING...
+
+rowIxs has the right contents
+  +++ OK, passed 100 tests.
+columnIxs has the right contents
+  +++ OK, passed 100 tests.
+downDiagIxs has the right contents
+  +++ OK, passed 1 test.
+upDiagIxs has the right contents
+  +++ OK, passed 1 test.
+emptyIxs has the correct output
+  +++ OK, passed 100 tests.
+won works correctly with two players
+  +++ OK, passed 100 tests.
+
+Finished in 0.0071 seconds
+6 examples, 0 failures
+Test suite spec: PASS
+Test suite logged to: dist/test/hw1-1.0.0.1-spec.log
