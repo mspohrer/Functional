@@ -1,0 +1,37 @@
+Test suite spec: RUNNING...
+
+problem 1
+  a. <> is associative
+    +++ OK, passed 1000 tests.
+  a. mempty is the left unit
+    +++ OK, passed 1000 tests.
+  a. mempty is the right unit
+    +++ OK, passed 1000 tests.
+  b. <> is associative
+    +++ OK, passed 1000 tests.
+  b. mempty is the left unit
+    +++ OK, passed 1000 tests.
+  b. mempty is the right unit
+    +++ OK, passed 1000 tests.
+  c. <> is associative
+    +++ OK, passed 1000 tests.
+  c. mempty is the left unit
+    +++ OK, passed 1000 tests.
+  c. mempty is the right unit
+    +++ OK, passed 1000 tests.
+problem 2
+  <>  is associative
+    +++ OK, passed 1000 tests.
+  == is reflexive
+    +++ OK, passed 1000 tests.
+  == is symmetric
+    +++ OK, passed 1000 tests.
+  == is transitive
+    +++ OK, passed 1000 tests.
+  == respects index-wise equality
+    +++ OK, passed 1000 tests; 55 discarded.
+
+Finished in 0.4434 seconds
+14 examples, 0 failures
+Test suite spec: PASS
+Test suite logged to: dist/test/hw2-1.1.0.0-spec.log
