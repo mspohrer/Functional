@@ -73,7 +73,6 @@ instance Monoid Matrix where
 -----------------------------------------------------------
 -----------------------------------------------------------
 
--- TODO make commutative
 -- Scalar Multiplication
 (|*$|) :: Matrix -> Int -> Matrix
 (|*$|) (M m) n = M (map (map (*n)) m)
@@ -173,62 +172,4 @@ main = do
   print z
   putStrLn "v:"
   print v
--- TODO's
-{-
-add = do 
-  putStrLn "Enter the first matrix"
-  m <- getLine
-  putStrLn "Enter the second matrix"
-  n <- getLine
-  show n ++ m
 
-offWeGo :: IO ()
-offWeGo n
-  | n == 1    = add
-  | n == 3    = do 
-    putStrLn "Enter the scalar"
-
-  | otherwise = putStrLn "Enter the scalar"
-
-intro :: IO ()
-intro = do
-  putStrLn "You can use this program but I can almost"
-  putStrLn "gurantee you it will go faster if you just call"
-  putStrLn "the functions yourself. There are many"
-  putStrLn "here but I wasn't trying to rock Haskell's"
-  putStrLn "world, just trying to write a simple Haskell"
-  putStrLn "program!\n"
-  putStrLn "Default Matrices:"
-  putStrLn "\nx ="
-  print x
-  putStrLn "\ny ="
-  print y
-  putStrLn "\nz ="
-  print z
-  putStrLn "\nWhat would you like to do? "
-  putStrLn "1. Add two matrices"
-  putStrLn "2. Subtract a matrix from a matrix"
-  putStrLn "3. Multiply a matrix buy a scalar"
-  putStrLn "4. Multiply two matrices"
-
-main = do
-  intro
- -- choice <- getLine
- -- offWeGo choice
-  
-
-
-randomList :: (Int, Int) -> IO [Int]
-randomList interval =
-  newStdGen >>= return . unfoldr (Just . randomR interval)
-
-i :: IO ()
-i  = do
-  ls <- randomList (1, 6)
-  let rs = take 10 ls
-  putStrLn $ show $ map (+10) rs
-
-ls = randomList (1, 9)
-
-newtype Index = Index (Integer, Integer)
--}
